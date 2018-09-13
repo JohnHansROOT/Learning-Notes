@@ -1,0 +1,48 @@
+1、延时：sleep
+	sleep 5 = sleep 5s
+	sleep 5m
+	sleep 5h
+	sleep 5d
+2、修改文件访问权限：chmod 777 /home/user
+	r:4 w:2 x:1 rwx:4+2+1=7 rw:4+2=6 rx:4+1=5    user group other
+	后跟路路径或者当前路径下文件名字
+	如果要该文件夹下所有子目录一起更改，在755之后加上参数 -R
+3、创建空文件：touch,进入编辑：vi,vim,用gedit 创建：gedit hello.c
+4、批量修改文件后缀名：rename
+	rename 's/\.htm/\.html/' ./*
+	将当前路径下所有以.htm后缀的改为.html后缀
+5、通配符*表示所有
+6、清空文件夹：rm ./*
+	如果有子文件夹，加上 -r
+7、执行某可执行文件：./hello.c or source hello.c
+8、中断正在执行的进程：Ctrl+C
+9、寻求指令帮助手册：man
+10、mv 移动文件,重命名
+11、umount 卸载挂载点
+12、df 查看挂载点
+13、pushd ./将当前dir压入栈，可以去其他地方逛，然后popd瞬间返回
+14、nautilus ./从终端打开文件浏览器当前位置
+15、xset dpms force off 熄灭屏幕
+16、输入一点然后TAP键补全
+17、Alt + F4关闭当前窗口
+18、bin 二进制可执行文件
+19、ls -l = ll
+20、file 命令查看文件格式
+21、C++文件后缀名可以.C .cc .cpp .cxx .c++，后缀名不重要
+22、.sh是一个shell文件
+23、拟合中产生的bin数是n+2，返回的FCN是卡方值，ndf是自由度数，Bin数减去拟合参数数目，但是对于为零的bin不计
+24、shell中TAB键补全代码或者列出以此开头的多个
+25、在shell中Ctrl + Shift + +可以放大，Ctrl + -可以缩小
+26、Ctrl + L和clear、reset都可清屏
+27、alias设置别名，alias 新的命令='原命令',注意等号前不能有空格！原命令用单引号双引号都可以
+28、top查看当前进程
+29、kill终止某个进程
+30、在命令后加一个&，则命令在后台执行，尤其是用终端打开一个软件的时候，为了不占用终端，可以加上&
+31、display打开图片，也可以用feh 打开
+32、evince打开pdf文件,已经重命名为pdf
+33、vlc打开视频文件
+33、ls 的opt中 l表示长列表显示，r 表示反序，t表示按照时间排，最新的在前,h表示人类可读，比如size从都以byte改为以k,M
+34、命令忘记加sudo，可以sudo !!在执行一次；也可以Ctrl+p,Ctrl+a,输入sudo
+35、清空一个文件：>file.txt
+36、vi中,Ctrl+N可以自动补全
+37、截屏：PrintScreen截全屏，Alt+PS截当前窗口，Shift+PS截选区，加上Ctrl则截取到粘贴板

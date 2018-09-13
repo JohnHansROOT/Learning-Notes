@@ -1,0 +1,25 @@
+http://root.cern.ch/root/html534/ClassIndex.html  Class参考
+
+1、.?列出所有command
+2、.q退出root
+3、.!访问操作系统command
+4、.x <filename> 运行程序
+5、.L 将外界程序load进入root环境，在root内直接可用其中的函数等
+6、T开头的是类，g开头的是全局变量
+7、TH直方图
+8、TCanvas 画布
+9、TGraph 画图，TGraphErrors画误差线，TGraph2D画2D
+10、TFile 文件操作
+11、TRandom 随机数
+12、TMath 数学公式
+13、helproot & 查看网页上的手册，可以进classlist去查看类的成员
+13、TF1 *f1 = new TF1("f1","sin(x)",-5.,5.);
+在heap上建立，也可写为auto *f1 = new ……，*也可省略；
+如果在栈上建立，TF1 f1("f1","sin(x)",-5.,5.);
+
+14、TH中的Fit是拟合
+15、root中新定义指针后如TH1 *f1,输入f1->按下Tab键则可自动列出该对象的成员函数和变量
+16、root -h或者-?或者--help 会打印所有选项 root -l 避免闪屏标志；root --notebook打开笔记本模式（jupyter）
+17、拟合中产生的bin数是n+2，返回的FCN是卡方值，ndf是自由度数，Bin数减去拟合参数数目，但是对于为零的bin不计
+18、Draw()中的参数：“SAME”画在已经存在的画布上；“L”折线连接点；“C”曲线连接点；“FC”填充区域
+
